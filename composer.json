@@ -1,0 +1,58 @@
+{
+    "name": "duroom/pusher",
+    "description": "See new discussions and posts in real-time using Pusher.",
+    "type": "duroom-extension",
+    "keywords": [
+        "discussion"
+    ],
+    "license": "MIT",
+    "support": {
+        "issues": "https://github.com/DuRoom/core/issues",
+        "source": "https://github.com/DuRoom/pusher",
+        "forum": "https://discuss-duroom.js.org"
+    },
+    "homepage": "https://duroom.js.org",
+    "require": {
+        "duroom/core": "^1.2",
+        "pusher/pusher-php-server": "^2.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "DuRoom\\Pusher\\": "src/"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.x-dev"
+        },
+        "duroom-extension": {
+            "title": "Pusher",
+            "category": "feature",
+            "icon": {
+                "image": "icon.png",
+                "backgroundSize": "46% 63%",
+                "backgroundPosition": "center",
+                "backgroundRepeat": "no-repeat",
+                "backgroundColor": "#40bad8",
+                "color": "#fff"
+            }
+        },
+        "duroom-cli": {
+            "modules": {
+                "admin": true,
+                "forum": true,
+                "js": true,
+                "jsCommon": false,
+                "css": true,
+                "gitConf": true,
+                "githubActions": true,
+                "prettier": true,
+                "typescript": true,
+                "bundlewatch": false,
+                "backendTesting": false,
+                "editorConfig": true,
+                "styleci": true
+            }
+        }
+    }
+}
